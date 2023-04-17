@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding: 100px 0;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold ;
+    text-decoration: underline;
+    color: green;
+    background-color: rgb(123, 180, 223) ;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:50px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(128, 219, 116) ;
+    background-color: rgb(3, 19, 31) ;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 30px 10%;
+    color: rgb(105, 112, 116);
+}
+
+.logo {
+    background-size: cover;
+    background-image: url('https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png');
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin-left: 10%;
+    margin-bottom: 10px;;
+}
