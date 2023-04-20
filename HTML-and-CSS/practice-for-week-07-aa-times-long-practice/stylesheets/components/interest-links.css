@@ -1,0 +1,52 @@
+/* Your code here */
+.interest-links-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    font-size: 10px;
+    border: 2px solid black;
+    border-width: 1px 0px;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+}
+.interest-links-container > div{
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.interest-text, .interests-bar-stocks{
+    border-right: 1px solid #e2e2e2;
+}
+div.interest-text{
+    align-items: flex-start;
+}
+.interest-links-container img{
+    width: 50px;
+    margin: 0 auto;
+}
+
+.interest-text{
+    align-self: flex-start;
+}
+
+.interests-stock:nth-of-type(-n + 2){
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.interests-stock{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 50px;
+}
+
+.interest-stock-title{
+    text-align: left;
+}
+.interest-stock-price{
+    text-align: right;
+    color: rgb(11, 163, 11);
+    font-weight: bold;
+}

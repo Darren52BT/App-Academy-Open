@@ -1,0 +1,93 @@
+/* Your code here */
+
+.masthead {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "menu-search . actions"
+    ". tech ."
+    "date logo paper";
+}
+
+
+.masthead__menu-and-search{
+    grid-area: menu-search;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.cog, .menu-bar, .search-bar{
+    font-size: 11px;
+    padding: 7px 9px;
+
+}
+
+.cog:hover, .menu-bar:hover, .search-bar:hover{
+   background:#f7f7f5;
+   cursor: pointer;
+}
+.masthead__actions{
+    grid-area: actions;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 0;
+
+
+}
+.masthead__technologies{
+
+    grid-area: tech;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e2e2;
+    border-bottom-width: 0px;
+}
+
+.tech{
+    display: flex;
+    
+}
+.tech span{
+    font-size: 10px;
+    color: #6f6f6f;
+    margin: 0 5px;
+    text-align: center;
+}
+.masthead__date{
+    grid-area: date;
+    font-size: 11px;
+
+}
+.masthead__logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 11px;
+
+
+}
+.masthead__paper{
+    grid-area: paper;
+    font-size: 11px;
+    justify-content: flex-end;
+
+}
+
+.masthead__date, .masthead__paper{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 7px;
+    border-top: 1px solid #e2e2e2;
+
+}
+
+.masthead__date, .masthead__logo, .masthead__paper{
+    border-bottom: 1px solid #e2e2e2;
+}
