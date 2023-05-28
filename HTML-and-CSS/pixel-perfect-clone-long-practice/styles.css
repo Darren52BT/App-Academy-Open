@@ -1,0 +1,470 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*header*/
+.header-logo img {
+    width: 30px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 10px;
+    width: 90%;
+}
+
+.header-links a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    display: flex;
+
+
+}
+
+.header-search {
+    width: 80%;
+    margin: 0 30px;
+}
+
+.header-search form {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    opacity: .6;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-search:hover {
+    opacity: .8;
+}
+
+.header-search i {
+    padding: 0 10px;
+    color: black;
+    opacity: .7;
+
+}
+
+.header-search i:hover {
+    cursor: pointer;
+}
+
+.header-search input,
+.boarder-search input:focus {
+    border: none;
+    outline: none;
+}
+
+.header-search input {
+    width: 100%;
+}
+
+.sign-up:hover {
+    color: grey;
+}
+
+/*main-section*/
+main {
+    background: url("https://live.staticflickr.com/65535/50515727882_407b445d4d_b.jpg");
+    width: 100%;
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+
+
+
+.main-text {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+
+}
+
+.main-text * {
+    display: inline-block;
+    ;
+}
+
+.photo-credits {
+    position: absolute;
+    bottom: 1em;
+    left: calc(50% - 3em);
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 10px;
+}
+
+.start {
+    margin: 2em 0;
+}
+
+.start:hover {
+    color: grey;
+}
+
+/*footer*/
+
+footer {
+    background: black;
+    height: 8vh;
+}
+
+footer,
+footer a {
+    color: #FFFFFF99;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer>ul {
+    display: flex;
+    height: 8vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.partners ul {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socials ul {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 40px;
+}
+
+/*text-sizes*/
+.logo-title {
+    font-family: 'Konkhmer Sleokchher', cursive;
+    color: white;
+    text-transform: lowercase;
+    font-size: 2em;
+}
+
+.small-link {
+    font-size: 1em;
+}
+
+.main-heading {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 2.5em;
+    ;
+
+}
+
+.secondary-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.small {
+    font-size: .9em;
+}
+
+/*----white button----*/
+a.white-button {
+    color: black;
+    padding: .5em 1em;
+    background: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1120px) {
+    .main-text {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .header-links {
+        width: unset;
+    }
+
+    .header-search form,
+    .header-search {
+        width: unset;
+        background: none;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-search input {
+        display: none;
+    }
+
+    .header-search i {
+        color: white;
+    }
+
+    .partners .small::after {
+        display: inline;
+        margin-left: 5px;
+        content: "Connecting people through photography.";
+    }
+
+    footer>ul {
+        flex-wrap: wrap;
+    }
+
+    footer>ul>li:nth-child(-n + 8) {
+        width: 12.5%;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    main {
+        height: 100vh;
+    }
+
+    footer,
+    footer>ul {
+        height: unset;
+    }
+
+    footer>ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    footer>ul>li:nth-child(-n + 10) {
+        width: 90%;
+        text-align: left;
+        padding: 1em 0;
+        border-bottom: .5px solid rgb(54, 54, 54);
+    }
+
+    footer>ul>li:nth-child(n + 11) {
+        padding: 20px 0;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .main-text {
+        width: 100%;
+    }
+
+    .partners .small::after {
+        display: block;
+        content: "";
+    }
+
+
+    .partners::after {
+        margin: 1em 0;
+        display: block;
+        text-align: center;
+        content: "Connecting people through photography.";
+    }
+}
+
+@media (max-height: 700px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 500px) {
+    html {
+        font-size: 10px;
+    }
+}
