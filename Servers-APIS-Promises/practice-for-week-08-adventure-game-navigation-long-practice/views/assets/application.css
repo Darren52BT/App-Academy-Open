@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background-color: peachpuff;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+form[action="/player"] {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 40px;
+}
+.inventory li p {
+  display: inline;
+}
+
+.inventory form {
+  display: inline;
+}
