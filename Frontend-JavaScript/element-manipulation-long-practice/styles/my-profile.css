@@ -1,0 +1,12 @@
+.name{
+    color: blue;
+}
+
+.my-details{
+    border: 1px solid red;
+}
+
+.detail:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
