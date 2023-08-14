@@ -90,9 +90,9 @@ const Router = express.Router
 const dogRouter = Router()
 
 dogRouter.get("/", getAllDogs)
-dogRouter.get("/:dogId", getDogById)
-dogRouter.post("/", createDog)
-dogRouter.put("/:dogId", updateDog)
-dogRouter.delete("/:dogId", deleteDog)
+dogRouter.get("/:dogId",validateDogId, getDogById)
+dogRouter.post("/",  validateDogInfo, createDog)
+dogRouter.put("/:dogId", validateDogId, validateDogInfo, updateDog)
+dogRouter.delete("/:dogId", validateDogId, deleteDog)
 
-module.exports = dogRouter;
+module.exports = {dogRouter, validateDogId};

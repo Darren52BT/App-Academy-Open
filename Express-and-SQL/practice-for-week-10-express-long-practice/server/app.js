@@ -44,9 +44,12 @@ app.post('/test-json', (req, res, next) => {
 app.get('/test-error', async (req, res) => {
   throw new Error("Hello World!")
 });
-//phase 3
-const dogRouter = require("./routes/dogs") 
+//phase 3/5
+const {dogRouter, validateDogId} = require("./routes/dogs") 
+const dogFoodRouter = require("./routes/dog-foods")
 app.use("/dogs", dogRouter )
+
+app.use("/dogs/:dogId/foods", validateDogId, dogFoodRouter)
 //connect not found
 app.use(notFound)
 
