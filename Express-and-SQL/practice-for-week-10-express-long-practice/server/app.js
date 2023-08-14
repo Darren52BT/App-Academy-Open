@@ -58,7 +58,7 @@ const errorHandler = (err, req, res, next) =>{
   res.status(err.statusCode || 500).json({
     message: err.message || "Something went wrong",
     statusCode : err.statusCode || 500,
-    stack : (process.env.NODE_ENV  === "production" ? err.stack : undefined)
+    stack : (process.env.NODE_ENV  === "production" ? undefined: err.stack)
 
   })
 }
