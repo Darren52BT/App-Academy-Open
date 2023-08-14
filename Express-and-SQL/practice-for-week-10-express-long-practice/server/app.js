@@ -43,9 +43,12 @@ app.post('/test-json', (req, res, next) => {
 app.get('/test-error', async (req, res) => {
   throw new Error("Hello World!")
 });
-
+//phase 3
+const dogRouter = require("./routes/dogs") 
+app.use("/dogs", dogRouter )
 //connect not found
 app.use(notFound)
+
 
 
 const port = 5000;
