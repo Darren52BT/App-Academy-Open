@@ -8,6 +8,7 @@ app.use(express.static(path.join(__dirname, "assets")))
 
 app.use(express.json())
 
+console.log(process.env.SECRET_MESSAGE)
 //phase 2
 const restLogger = (req, res, next) =>{
   console.log(req.method, req.url)
@@ -49,6 +50,20 @@ app.use("/dogs", dogRouter )
 //connect not found
 app.use(notFound)
 
+
+//phase 4
+
+const errorHandler = (err, req, res, next) =>{
+  console.log(err)
+  res.status(err.statusCode || 500).json({
+    message: err.message || "Something went wrong",
+    statusCode : err.statusCode || 500,
+    stack : (process.env.NODE_ENV  === "production" ? err.stack : undefined)
+
+  })
+}
+
+app.use(errorHandler)
 
 
 const port = 5000;
